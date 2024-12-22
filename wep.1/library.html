@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+  
+    <header >
+        <div class="icon-container">
+            <div class="icon">
+              <i class="fa fa-heart" ></i>
+            </div>
+            <div class="icon">
+              <i class="fa fa-search" ></i>
+            </div>
+          </div>
+          
+      <div class="nav-container">
+        
+        <div class="logo">
+            <img  calss="logo"    src="image/logo.png" style="height: 55px;" "width=55px;"> 
+        </div>
+        <nav >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Featured">Featured</a></li>
+                <li><a href="#Arrivals">Arrivals</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#Blog">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+       
+    </header>
+
+    <div class="load-more-container">
+        <div class="load-more-text">
+            <h1>WELCOME TO <span style="color: teal; ">BOOK STORE</span></h1>
+        <p>Discover your next great read with us.</p>
+            
+            <button class="load-more-btn">Load More</button>
+        </div>
+        <img src="image/table.png"   alt="Books" class="load-more-image" />
+    </div>
+
+    
+    <section class="features" id="About">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="image/fast-delivery.png" alt="Fast Delivery" />
+        </div>
+        <h3>Fast Delivery</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="image/helpline.png" alt="24 x 7 Services" />
+        </div>
+        <h3>24 x 7 Services</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="image/sale-tag.png" alt="Best Deal" />
+        </div>
+        <h3>Best Deal</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="image/padlock.png" alt="Secure Payment" />
+        </div>
+        <h3>Secure Payment</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipiscing elit.</p>
+      </div>
+    </section>
+    
+   
+  <div class="load-more-container">
+    <div class="load-more-text">
+        <p>Discover your next great read with us!</p>
+        <button class="load-more-btn">Load More</button>
+    </div>
+    <img src="image/about.png" alt="Books" class="load-more-image" />
+</div>
+
+    <!-- Featured Books Section -->
+    <section class="book-section" id="Featured">
+        <h2>Featured Books</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollBooks('featured-scroll', -300)" >
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="featured-scroll" class="book-grid">
+                <div class="book-card">
+                    <img src="image/book_2.jpg" alt="Book 1">
+                    <h3>Book Title 1</h3>
+                    <p>By John Doe</p>
+                    <span>$25.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/book_1.jpg" alt="Book 2">
+                    <h3>Book Title 2</h3>
+                    <p>By Jane Doe</p>
+                    <span>$19.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/book_3.jpg" alt="Book 3">
+                    <h3>Book Title 3</h3>
+                    <p>By Alex Smith</p>
+                    <span>$22.50</span>
+                </div>
+                <div class="book-card">
+                    <img src="image/book_4.jpg" alt="Book 4">
+                    <h3>Book Title 4</h3>
+                    <p>By Sarah Lee</p>
+                    <span>$18.99</span>
+                </div>
+                <div class="book-card">
+                  <img src="image/book_5.jpg" alt="Book 5">
+                  <h3>Book Title 3</h3>
+                  <p>By Alex Smith</p>
+                  <span>$22.50</span>
+              </div>
+
+              <div class="book-card">
+                <img src="image/book_6.jpg" alt="Book 6">
+                <h3>Book Title 3</h3>
+                <p>By Alex Smith</p>
+                <span>$22.50</span>
+            </div>
+            <div class="book-card">
+              <img src="image/book_11.jpg" alt="Book 7">
+              <h3>Book Title 3</h3>
+              <p>By Alex Smith</p>
+              <span>$22.50</span>
+          </div>
+
+          <div class="book-card">
+            <img src="image/book_9.jpg" alt="Book 8">
+            <h3>Book Title 3</h3>
+            <p>By Alex Smith</p>
+            <span>$22.50</span>
+        </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollBooks('featured-scroll', 300)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="book-section" id="Arrivals">
+        <h2>New Arrivals</h2>
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollBooks('arrivals-scroll', -300)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="arrivals-scroll" class="book-grid">
+                <div class="book-card">
+                    <img src="image/darknet.jpg" alt="Book 5">
+                    <h3>Arrival Book 1</h3>
+                    <p>By Michael Brown</p>
+                    <span>$20.00</span>
+                </div>
+                <div class="book-card">
+                    <img src="image/sure.jpg" alt="Book 6">
+                    <h3>Arrival Book 2</h3>
+                    <p>By Chris Adams</p>
+                    <span>$15.99</span>
+                </div>
+                <div class="book-card">
+                    <img src="image/arrival_8.webp" alt="Book 7">
+                    <h3>Arrival Book 3</h3>
+                    <p>By Emily Clark</p>
+                    <span>$21.00</span>
+                </div>
+                <div class="book-card">
+                    <img src="image/arrival_7.jpg" alt="Book 8">
+                    <h3>Arrival Book 4</h3>
+                    <p>By Anna Scott</p>
+                    <span>$17.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/ac.jpg" alt="Book 9">
+                    <h3>Arrival Book 4</h3>
+                    <p>By Anna Scott</p>
+                    <span>$17.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/rivals.jpg" alt="Book 10">
+                    <h3>Arrival Book 4</h3>
+                    <p>By Anna Scott</p>
+                    <span>$17.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/spark.jpg" alt="Book 11">
+                    <h3>Arrival Book 4</h3>
+                    <p>By Anna Scott</p>
+                    <span>$17.99</span>
+                </div>
+
+                <div class="book-card">
+                    <img src="image/ship.jpg" alt="Book 12">
+                    <h3>Arrival Book 4</h3>
+                    <p>By Anna Scott</p>
+                    <span>$17.99</span>
+                </div>
+
+            </div>
+            <button class="scroll-btn right" onclick="scrollBooks('arrivals-scroll', 300)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="reviews-section" id="Reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-container">
+          <!-- Review 1 -->
+          <div class="review">
+            <img src="image/review_3.png" alt="User 1" class="review-img">
+            <div class="review-content">
+              <h3>Jane Doe</h3>
+              <p>"Amazing book! Highly recommend it to everyone."</p>
+              <div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="review">
+            <img src="image/review_1.png" alt="User 2" class="review-img">
+            <div class="review-content">
+              <h3>John Smith</h3>
+              <p>"Good read but the pacing was a bit slow in the middle."</p>
+              <div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review">
+            <img src="image/review_2.png" alt="User 3" class="review-img">
+            <div class="review-content">
+              <h3>Emily Clark</h3>
+              <p>"A captivating story that kept me engaged throughout."</p>
+              <div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="Blog">
+        <h2>Our Blog</h2>
+        <div class="reviews-container">
+          <!-- Review 1 -->
+          <div class="review">
+            <img src="image/original.webp" alt="User 1" class="review-img">
+            <div class="review-content">
+              <h3>Jane Doe</h3>
+              <p>"Amazing book! Highly recommend it to everyone."</p>
+              <!--<div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>-->
+            </div>
+            <div class="review-footer">
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-calendar-alt"></i>
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="review">
+            <img src="image/33.jpg" alt="User 2" class="review-img">
+            <div class="review-content">
+              <h3>John Smith</h3>
+              <p>"Good read but the pacing was a bit slow in the middle."</p>
+             <!-- <div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>-->
+            </div>
+            <div class="review-footer">
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-calendar-alt"></i>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review">
+            <img src="image/review_4.png" alt="User 3" class="review-img">
+            <div class="review-content">
+              <h3>Emily Clark</h3>
+              <p>"A captivating story that kept me engaged throughout."</p>
+             <!-- <div class="review-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>-->
+            </div>
+            <div class="review-footer">
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-calendar-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-about">
+            <img src="image/logo.png" alt="Bookstore Logo" class="footer-logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ipsa aspernatur ad sequi, dolce eveniet vitae quasi. Excerpturi ipsa odio impedit sequi at hic velit, minus vero sint. Voluptas?</p>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Featured</a></li>
+              <li><a href="#">Arrivals</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Contact Info Section -->
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> +94 12 345 6789</li>
+              <li><i class="fas fa-phone"></i> +94 32 444 699</li>
+              <li><i class="fas fa-envelope"></i> bookstore123@gmail.com</li>
+            </ul>
+          </div>
+          <!-- Follow Us Section -->
+          <div class="footer-follow">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <!-- Newsletter Section -->
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <form>
+              <input type="email" placeholder="Your email here" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+
+    <!-- JavaScript -->
+    <script>
+        function scrollBooks(containerId, scrollAmount) {
+            const container = document.getElementById(containerId);
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
